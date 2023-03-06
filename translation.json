@@ -1176,8 +1176,8 @@
       "name": "中文(繁體)",
       "code": "zh-TW",
       "translation": {
-        "AppName": "檔案管理器",
-        "AppTitle": "檔案管理器",
+        "AppName": "相簿",
+        "AppTitle": "相簿",
         "Login": "登入",
         "Username": "帳號",
         "Password": "密碼",

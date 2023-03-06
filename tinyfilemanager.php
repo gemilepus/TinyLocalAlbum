@@ -14,7 +14,7 @@ $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":
 define('VERSION', '2.5.2');
 
 //Application Title
-define('APP_TITLE', 'Tiny File Manager');
+define('APP_TITLE', 'album');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
@@ -1755,7 +1755,7 @@ if (isset($_GET['view'])) {
             } elseif ($is_image) {
                 // Image content
                 if (in_array($ext, array('gif', 'jpg', 'jpeg', 'png', 'bmp', 'ico', 'svg', 'webp', 'avif'))) {
-                    echo '<p><img src="' . fm_enc($file_url) . '" alt="image" class="preview-img-container" class="preview-img"></p>';
+                    echo '<p><img src="' . fm_enc($file_url) . '" alt="image" class="preview-img-container" class="preview-img" style="width: 99%;"></p>';
                 }
             } elseif ($is_audio) {
                 // Audio content
@@ -2157,7 +2157,7 @@ $tableTheme = (FM_THEME == "dark") ? "text-white bg-dark table-dark" : "bg-white
         </table>
     </div>
 
-    <div class="row">
+    <div class="row" style="height: 300px">
         <?php if (!FM_READONLY): ?>
         <div class="col-xs-12 col-sm-9">
             <ul class="list-inline footer-action">
@@ -3739,7 +3739,7 @@ $isStickyNavBar = $sticky_navbar ? 'navbar-fixed' : 'navbar-normal';
         }
         ul#search-wrapper { padding-left: 0;border: 1px solid #ecececcc; } ul#search-wrapper li { list-style: none; padding: 5px;border-bottom: 1px solid #ecececcc; }
         ul#search-wrapper li:nth-child(odd){ background: #f9f9f9cc;}
-        .c-preview-img { max-width: 300px; }
+        .c-preview-img { max-width: 600px; }
         .border-radius-0 { border-radius: 0; }
         .float-right { float: right; }
         .table-hover>tbody>tr:hover>td:first-child { border-left: 1px solid #1b77fd; }
